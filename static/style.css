@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "Sabon LT Std Roman";
+    src: url("SabonLTStd-Roman.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Sabon LT Std Italic";
+    src: url("SabonLTStd-Italic.otf") format("opentype");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Optima Medium Local";
+    src: local("Optima Medium"), local("Optima");
+    font-style: normal;
+    font-weight: 500;
+}
+
+body {
+    font-family: "Sabon LT Std Roman", Georgia, serif;
+    font-weight: 400;
+    padding-top: 5.0rem;
+    font-size: 1.02rem;
+    line-height: 1.58;
+    color: #1f2328;
+}
+
+@media (min-width: 1200px) {
+    .container-lg {
+        max-width: 1320px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Sabon LT Std Roman", Georgia, serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.card {
+    border-radius: 0.8rem!important;
+}
+
+.card-img-overlay {
+    border-radius: 0.8rem!important;
+}
+
+.rounded-xl {
+    border-radius: 0.8rem!important;
+}
+
+.rounded-xl-bottom {
+    border-bottom-right-radius: 0.8rem !important;
+    border-bottom-left-radius: 0.8rem !important;
+}
+
+.rounded-xl-top {
+    border-top-left-radius: 0.8rem !important;
+    border-top-right-radius: 0.8rem !important;
+}
+
+
+.text-profile-position {
+    font-weight: 400;
+}
+
+.text-profile-bio {
+    /* font-family: "Raleway"; */
+    font-weight: 400;
+}
+
+.navbar {
+    opacity: 0.95;
+}
+
+.inline-badge {
+    height: 16px;
+    vertical-align: -10%;
+    margin-right: 2px;
+    line-break: unset;
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
+.cover-image {
+    width: 180px;
+    max-height: 120px;
+}
+
+.abstract-body {
+    min-height: 100px;
+}
+
+img.lazy {
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    min-height: 80px;
+}
+
+div.lazy {
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    min-height: 80px;
+}
+
+.badge-publication {
+    font-size: 100%;
+}
+
+.email-text {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.navbar-brand {
+    font-family: "Cinzel", Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.nav-link {
+    font-family: "Sabon LT Std Roman", Georgia, serif;
+    font-size: 1.02rem;
+    font-weight: 500;
+}
+
+.h3,
+h3 {
+    font-family: "Optima Medium Local", "Optima", "Gill Sans", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-variant-caps: small-caps;
+    font-feature-settings: "smcp" 1, "c2sc" 1;
+}
+
+h6 {
+    font-family: "Optima Medium Local", "Optima", "Gill Sans", sans-serif;
+    font-size: 1.22rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-variant-caps: small-caps;
+    font-feature-settings: "smcp" 1, "c2sc" 1;
+}
+
+.card-body,
+.media,
+.small {
+    font-size: 1rem;
+}
+
+.text-profile-bio p {
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+.about-card .card-body {
+    padding-bottom: 1.1rem !important;
+}
+
+.about-card .row.p-3 {
+    padding-top: 0.85rem !important;
+    padding-bottom: 0.4rem !important;
+}
+
+.about-card .text-profile-bio p {
+    margin-bottom: 0.2rem;
+}
+
+.section-card h6 {
+    position: relative;
+    border-bottom: 0 !important;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+}
+
+.section-card h6::after {
+    content: "";
+    position: absolute;
+    left: 2.5rem;
+    right: 2.5rem;
+    bottom: 0;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.education-card .px-3 {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+}
+
+.section-card .row.no-gutters > .col-md-3,
+.section-card .row.no-gutters > .col-xl-2 {
+    padding-left: 2.5rem !important;
+}
+
+.section-card .row.no-gutters > .col-md-9,
+.section-card .row.no-gutters > .col-xl-10 {
+    padding-right: 2.5rem !important;
+}
+
+.section-card .row.no-gutters.border-bottom {
+    position: relative;
+    border-bottom: 0 !important;
+}
+
+.section-card .row.no-gutters.border-bottom::after {
+    content: "";
+    position: absolute;
+    left: 2.5rem;
+    right: 2.5rem;
+    bottom: 0;
+    border-bottom: 1px solid #d1d5db;
+}
+
+.card-body,
+.media,
+.small,
+.text-muted,
+.btn,
+.navbar,
+.navbar-toggler {
+    font-family: "Sabon LT Std Roman", Georgia, serif;
+}
+
+.edu-school {
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.edu-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex: 0 0 auto;
+    border-radius: 999px;
+}
+
+.edu-detail {
+    padding-left: calc(22px + 0.45rem);
+}
+
+.edu-degree {
+    line-height: 1.35;
+}
+
+.edu-time {
+    justify-self: end;
+    text-align: right;
+}
+
+.interest-item {
+    position: relative;
+    padding-left: 1.1rem;
+}
+
+.interest-item::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #6c757d;
+}
+
+em,
+i,
+.entry-subtitle,
+.edu-time {
+    font-family: "Sabon LT Std Italic", "Sabon LT Std Roman", Georgia, serif;
+    font-style: italic;
+    font-size: 0.94em;
+}

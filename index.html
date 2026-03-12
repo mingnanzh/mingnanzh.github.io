@@ -1,104 +1,517 @@
 <!doctype html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.104.2">
-    <title>mingnanzh.github.io</title>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>Homepage - Mingnan Zhao</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+            integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css"
+            integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg=="
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+            integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Crimson+Text:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        />
+        <link rel="stylesheet" href="static/style.css" />
+    </head>
+    <body class="bg-light">
+        <nav
+            class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top mb-5 shadow-sm"
+        >
+            <div class="container-lg">
+                <a class="navbar-brand"><strong>Mingnan Zhao</strong></a>
+                <button
+                    class="navbar-toggler"
+                    style="font-size: 1em; padding: 0.5em"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <i class="fas fa-map"></i> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#selected-publications"
+                                >Publications</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="row sticky-top" style="top: 80px">
+                        <div class="col">
+                            <div class="card border-0 shadow-sm bg-white">
+                                <div class="card-body px-4 pt-4 pb-3">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div
+                                                class="figure d-none d-md-block"
+                                            >
+                                                <img
+                                                    src="static/portrait.jpg"
+                                                    class="figure-img img-fluid"
+                                                    alt="Portrait"
+                                                />
+                                            </div>
+                                            <div
+                                                class="mb-3 d-md-none text-center"
+                                            >
+                                                <img
+                                                    src="static/portrait.jpg"
+                                                    class="rounded-circle"
+                                                    style="max-width: 60%"
+                                                    alt="Portrait"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div class="row">
+                                        <div class="col text-center h4">
+                                            Mingnan Zhao
+                                        </div>
+                                    </div>
+                                    <div class="row small">
+                                        <div class="col text-center">
+                                            Ph.D. Candidate<br />
+                                            Nanjing University
+                                        </div>
+                                    </div>
+                                    <div class="row small">
+                                        <div class="col text-center">
+                                            <a
+                                                class="email-text"
+                                                href="mailto:mingnanzh@gmail.com"
+                                                >mingnanzh(at)gmail.com</a
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="row pt-2">
+                                        <div class="col text-center h4">
+                                            <a
+                                                class="px-1 no-break"
+                                                target="_blank"
+                                                href="https://scholar.google.com/citations?user=xFmQpf4AAAAJ"
+                                                ><i
+                                                    class="fab fa-google-scholar"
+                                                ></i
+                                            ></a>
+                                            <a
+                                                class="px-1 no-break"
+                                                target="_blank"
+                                                href="https://github.com/mingnanzh"
+                                                ><i class="fab fa-github"></i
+                                            ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-lg-9 col-md-8">
+                    <div class="mt-3 d-md-none"></div>
 
+                    <div class="row">
+                        <div class="col">
+                            <div class="card border-0 shadow-sm bg-white about-card">
+                                <div class="card-body p-4">
+                                    <div class="row px-3 pt-3">
+                                        <div class="col h3">About Me</div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <div class="col">
+                                            <div class="text-profile-bio mt-0">
+                                                <p>
+                                                    I am currently pursuing my
+                                                    Ph.D. in the Theory Group in School
+                                                    of Computer Science at
+                                                    Nanjing University, advised
+                                                    by Prof. Penghui Yao. My
+                                                    research lies at the
+                                                    intersection of quantum
+                                                    computing and theoretical
+                                                    computer science,
+                                                    specifically focusing on
+                                                    quantum information,
+                                                    complexity, and
+                                                    cryptography.
+                                                    I also have broader
+                                                    interests in classical
+                                                    pseudorandomness and
+                                                    derandomization.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-<link href="index.css" rel="stylesheet">
+                    <div class="my-3 bg-white shadow-sm rounded-xl section-card education-card">
+                        <h6 class="p-3 mb-0 border-bottom border-gray">
+                            <i class="fas fa-building-columns"></i> Education
+                        </h6>
+                        <div class="px-3 pb-1 small">
+                            <div class="media py-1">
+                                <div class="media-body">
+                                    <div class="my-1 edu-school">
+                                        <img
+                                            src="static/nju.jpg"
+                                            alt="Nanjing University"
+                                            class="edu-icon"
+                                        />
+                                        <span>Ph.D. Candidate in Computer Science</span>
+                                        <span
+                                            class="edu-time text-muted no-break"
+                                        >
+                                            <i>Sept. 2020 - Now</i>
+                                        </span>
+                                    </div>
+                                    <div class="my-1 edu-detail">
+                                        <div class="edu-degree">
+                                            <i>School of Computer Science, Nanjing University</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media py-1 border-top border-gray">
+                                <div class="media-body">
+                                    <div class="my-1 edu-school">
+                                        <img
+                                            src="static/nju.jpg"
+                                            alt="Nanjing University"
+                                            class="edu-icon"
+                                        />
+                                        <span>
+                                            B.S. in Computer Science
+                                        </span>
+                                        <span
+                                            class="edu-time text-muted no-break"
+                                        >
+                                            <i>Sept. 2016 - Jun. 2020</i>
+                                        </span>
+                                    </div>
+                                    <div class="my-1 edu-detail">
+                                        <div class="edu-degree">
+                                            <i>Kuang Yaming Honors School, Nanjing University</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+                    <div
+                        id="selected-publications"
+                        class="my-3 p-0 bg-white shadow-sm rounded-xl section-card"
+                    >
+                        <h6 class="border-bottom border-gray p-3 mb-0">
+                            <i class="fas fa-file-lines"></i> Publications and Preprints
+                        </h6>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+                        <div class="d-none d-md-block">
+                            <div
+                                class="row no-gutters border-bottom border-gray"
+                            >
+                                <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+                                    <img
+                                        alt="Quantum Pseudorandom Scramblers"
+                                        class="w-100 rounded-sm"
+                                        src="static/cover1.jpg"
+                                    />
+                                </div>
+                                <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+                                    <h5 class="mt-0 mb-1 font-weight-normal">
+                                        Quantum Pseudorandom Scramblers
+                                    </h5>
+                                    <p class="mt-0 mb-0 small">
+                                        Chuhan Lu, Minglong Qin, Fang Song,
+                                        Penghui Yao,
+                                        <strong>Mingnan Zhao</strong>
+                                    </p>
+                                    <p class="mt-0 mb-0 small">
+                                        <i
+                                            >Theory of Cryptography Conference
+                                            (TCC)</i
+                                        >
+                                        2024
+                                    </p>
+                                    <p class="mt-0 mb-0 small text-muted">
+                                        Contributed talk at QIP 2024.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+                        <div class="d-none d-md-block">
+                            <div
+                                class="row no-gutters border-bottom border-gray"
+                            >
+                                <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+                                    <img
+                                        alt="A Pseudorandom Generator for Functions of Low-Degree Polynomial Threshold Functions"
+                                        class="w-100 rounded-sm"
+                                        src="static/cover3.jpg"
+                                    />
+                                </div>
+                                <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+                                    <h5 class="mt-0 mb-1 font-weight-normal">
+                                        A Pseudorandom Generator for Functions
+                                        of Low-Degree Polynomial Threshold
+                                        Functions
+                                    </h5>
+                                    <p class="mt-0 mb-0 small">
+                                        Penghui Yao,
+                                        <strong>Mingnan Zhao</strong>
+                                    </p>
+                                    <p class="mt-0 mb-0 small">
+                                        <i
+                                            >International Colloquium on
+                                            Automata, Languages, and Programming
+                                            (ICALP)</i
+                                        >
+                                        2025
+                                    </p>
+                                    <p class="mt-0 mb-0 small text-muted">
+                                        Presented at ICALP 2025.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+                        <div class="d-none d-md-block">
+                            <div class="row no-gutters border-gray">
+                                <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+                                    <img
+                                        alt="Parallel Kac's Walk Generates PRU"
+                                        class="w-100 rounded-sm"
+                                        src="static/cover2.jpg"
+                                    />
+                                </div>
+                                <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+                                    <h5 class="mt-0 mb-1 font-weight-normal">
+                                        Parallel Kac's Walk Generates PRU
+                                    </h5>
+                                    <p class="mt-0 mb-0 small">
+                                        Chuhan Lu, Minglong Qin, Fang Song,
+                                        Penghui Yao,
+                                        <strong>Mingnan Zhao</strong>
+                                    </p>
+                                    <p class="mt-0 mb-0 small">
+                                        <i>QIP 2025 / QCrypt 2025 Poster</i>
+                                        2025
+                                    </p>
+                                    <p class="mt-0 mb-0 small text-muted">
+                                        arXiv:2504.14957
+                                    </p>
+                                    <p
+                                        class="small pb-0 mb-0 lh-125 text-muted abstract-links"
+                                    >
+                                        <a
+                                            target="_blank"
+                                            href="https://arxiv.org/abs/2504.14957"
+                                            >[Paper]</a
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+                    <div
+                        id="selected-publications"
+                        class="my-3 p-0 bg-white shadow-sm rounded-xl section-card"
+                    >
+                        <h6 class="border-bottom border-gray p-3 mb-0">
+                            <i class="fas fa-person-chalkboard"></i> Activities
+                        </h6>
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+                        <div class="d-none d-md-block">
+                            <div
+                                class="row no-gutters border-bottom border-gray"
+                            >
+                                <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+                                    <img
+                                        alt="Quantum Pseudorandom Scramblers"
+                                        class="w-100 rounded-sm"
+                                        src="static/cover1.jpg"
+                                    />
+                                </div>
+                                <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+                                    <h5 class="mt-0 mb-1 font-weight-normal">
+                                        Quantum Pseudorandom Scramblers
+                                    </h5>
+                                    <p class="mt-0 mb-0 small">
+                                        Chuhan Lu, Minglong Qin, Fang Song,
+                                        Penghui Yao,
+                                        <strong>Mingnan Zhao</strong>
+                                    </p>
+                                    <p class="mt-0 mb-0 small">
+                                        <i
+                                            >Theory of Cryptography Conference
+                                            (TCC)</i
+                                        >
+                                        2024
+                                    </p>
+                                    <p class="mt-0 mb-0 small text-muted">
+                                        Contributed talk at QIP 2024.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
+                        <div class="d-none d-md-block">
+                            <div
+                                class="row no-gutters border-bottom border-gray"
+                            >
+                                <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+                                    <img
+                                        alt="A Pseudorandom Generator for Functions of Low-Degree Polynomial Threshold Functions"
+                                        class="w-100 rounded-sm"
+                                        src="static/cover3.jpg"
+                                    />
+                                </div>
+                                <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+                                    <h5 class="mt-0 mb-1 font-weight-normal">
+                                        A Pseudorandom Generator for Functions
+                                        of Low-Degree Polynomial Threshold
+                                        Functions
+                                    </h5>
+                                    <p class="mt-0 mb-0 small">
+                                        Penghui Yao,
+                                        <strong>Mingnan Zhao</strong>
+                                    </p>
+                                    <p class="mt-0 mb-0 small">
+                                        <i
+                                            >International Colloquium on
+                                            Automata, Languages, and Programming
+                                            (ICALP)</i
+                                        >
+                                        2025
+                                    </p>
+                                    <p class="mt-0 mb-0 small text-muted">
+                                        Presented at ICALP 2025.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="d-none d-md-block">
+                            <div class="row no-gutters border-gray">
+                                <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+                                    <img
+                                        alt="Parallel Kac's Walk Generates PRU"
+                                        class="w-100 rounded-sm"
+                                        src="static/cover2.jpg"
+                                    />
+                                </div>
+                                <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+                                    <h5 class="mt-0 mb-1 font-weight-normal">
+                                        Parallel Kac's Walk Generates PRU
+                                    </h5>
+                                    <p class="mt-0 mb-0 small">
+                                        Chuhan Lu, Minglong Qin, Fang Song,
+                                        Penghui Yao,
+                                        <strong>Mingnan Zhao</strong>
+                                    </p>
+                                    <p class="mt-0 mb-0 small">
+                                        <i>QIP 2025 / QCrypt 2025 Poster</i>
+                                        2025
+                                    </p>
+                                    <p class="mt-0 mb-0 small text-muted">
+                                        arXiv:2504.14957
+                                    </p>
+                                    <p
+                                        class="small pb-0 mb-0 lh-125 text-muted abstract-links"
+                                    >
+                                        <a
+                                            target="_blank"
+                                            href="https://arxiv.org/abs/2504.14957"
+                                            >[Paper]</a
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
 
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-  </head>
-  <body class="d-flex h-100 text-center text-bg-dark">
+        <footer class="footer border-top py-2 mt-5 bg-white small">
+            <div class="container-lg">
+                <div class="row my-3">
+                    <div class="col-6">
+                        <div class="text-muted">
+                            <i>Last updated: Mar 2026</i>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-right text-muted">
+                            <a
+                                href="https://github.com/luost26/academic-homepage"
+                                target="_blank"
+                                ><i class="fas fa-pencil-ruler"></i>
+                                academic-homepage</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <nav class="nav nav-masthead">
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-        <a class="nav-link fw-bold py-1 px-0" href="download.png">Download</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="px-3">
-    <h1>Genshin Impact UID</h1>
-    <p></p>
-    <p class="lead">
-      <a href="https://ys.mihoyo.com/main/" class="btn btn-lg btn-secondary fw-bold border-white bg-white">158031551</a>
-    </p>
-  </main>
-
-  <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
-</div>
-
-
-
-  </body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
+            integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>

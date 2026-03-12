@@ -72,6 +72,23 @@ body {
     }
 }
 
+@media (max-width: 767.98px) {
+    .publication-title-row {
+        align-items: flex-start;
+        gap: 0.45rem;
+    }
+
+    .publication-title-actions {
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+
+    .section-card .row.no-gutters > .col-12 {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "Sabon LT Std Roman", Georgia, serif;

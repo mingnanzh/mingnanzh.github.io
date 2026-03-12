@@ -573,3 +573,59 @@ i,
     font-style: italic;
     font-size: 0.94em;
 }
+
+@media (max-width: 767.98px) {
+    .publication-title-row {
+        display: block;
+    }
+
+    .publication-title-row > a {
+        display: block;
+    }
+
+    .publication-title-actions {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .section-card .row.no-gutters > .col-12 {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .education-card .px-3 {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .edu-school {
+        grid-template-columns: 22px minmax(0, 1fr);
+        align-items: start;
+    }
+
+    .edu-time {
+        display: block;
+        grid-column: 2;
+        justify-self: start;
+        text-align: left;
+        margin-top: 0.15rem;
+    }
+
+    .edu-detail {
+        padding-left: calc(22px + 0.45rem);
+    }
+
+    .edu-degree-row {
+        display: block;
+    }
+
+    .edu-location {
+        display: block;
+        text-align: left;
+        white-space: normal;
+        margin-top: 0.15rem;
+    }
+}

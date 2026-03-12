@@ -54,35 +54,11 @@
 
         <div class="container-lg">
             <div class="row">
-                <div class="col-lg- col-md-4 profile-column">
+                <div class="col-lg-3 col-md-4 profile-column">
                     <div class="row sticky-top" style="top: 80px">
                         <div class="col">
-                            <div class="card border-0 shadow-sm bg-white">
-                                <div class="card-body px-4 pt-4 pb-3">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div
-                                                class="figure d-none d-md-block profile-photo-wrap"
-                                            >
-                                                <img
-                                                    src="static/portrait.jpg"
-                                                    class="figure-img img-fluid profile-photo"
-                                                    alt="Portrait"
-                                                />
-                                            </div>
-                                            <div
-                                                class="mb-3 d-md-none text-center"
-                                            >
-                                                <img
-                                                    src="static/portrait.jpg"
-                                                    class="rounded-circle"
-                                                    style="max-width: 60%"
-                                                    alt="Portrait"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-
+                            <div class="card border-0 shadow-sm bg-white hero-profile-card">
+                                <div class="card-body pt-4 pb-3 profile-card-body">
                                     <div class="row">
                                         <div class="col text-center h4 profile-name">
                                             Mingnan Zhao
@@ -130,7 +106,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <div class="card border-0 shadow-sm bg-white about-card">
+                            <div class="card border-0 shadow-sm bg-white about-card hero-about-card">
                                 <div class="card-body p-4">
                                     <div class="row px-3 pt-3">
                                         <div class="col h3">About Me</div>
@@ -349,5 +325,25 @@
             integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
             crossorigin="anonymous"
         ></script>
+        <script>
+            (function () {
+                const syncHeroCardHeight = () => {
+                    const profileCard = document.querySelector(".hero-profile-card");
+                    const aboutCard = document.querySelector(".hero-about-card");
+
+                    if (!profileCard || !aboutCard) return;
+
+                    if (window.innerWidth < 768) {
+                        profileCard.style.minHeight = "";
+                        return;
+                    }
+
+                    profileCard.style.minHeight = `${aboutCard.offsetHeight}px`;
+                };
+
+                window.addEventListener("load", syncHeroCardHeight);
+                window.addEventListener("resize", syncHeroCardHeight);
+            })();
+        </script>
     </body>
 </html>

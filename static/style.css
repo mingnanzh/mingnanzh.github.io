@@ -173,18 +173,6 @@ div.lazy {
     margin-top: 0;
 }
 
-.profile-photo-wrap {
-    margin-top: 0.65rem;
-    margin-bottom: 1rem;
-}
-
-.profile-photo {
-    width: 92%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 0.8rem;
-}
-
 .nav-link {
     font-family: "Sabon LT Std Roman", Georgia, serif;
     font-size: 1.02rem;
@@ -199,6 +187,23 @@ div.lazy {
     font-feature-settings: normal;
     letter-spacing: normal;
     color: rgba(255, 255, 255, 0.82);
+}
+
+.profile-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    padding-top: 1.8rem !important;
+}
+
+.profile-card-body > .row {
+    margin-bottom: 0.45rem;
+}
+
+.profile-card-body > .row:last-child {
+    margin-bottom: 0;
 }
 
 .h3,

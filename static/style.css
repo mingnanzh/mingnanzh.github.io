@@ -74,18 +74,54 @@ body {
 
 @media (max-width: 767.98px) {
     .publication-title-row {
+        display: block;
         align-items: flex-start;
         gap: 0.45rem;
     }
 
     .publication-title-actions {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: flex-start;
         margin-left: 0;
+        margin-top: 0.5rem;
     }
 
     .section-card .row.no-gutters > .col-12 {
         padding-left: 1.5rem !important;
         padding-right: 1.5rem !important;
+    }
+
+    .education-card .px-3 {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .edu-school {
+        grid-template-columns: 22px minmax(0, 1fr);
+        align-items: start;
+    }
+
+    .edu-time {
+        grid-column: 2;
+        justify-self: start;
+        text-align: left;
+        margin-top: 0.15rem;
+    }
+
+    .edu-detail {
+        padding-left: calc(22px + 0.45rem);
+    }
+
+    .edu-degree-row {
+        display: block;
+    }
+
+    .edu-location {
+        display: block;
+        text-align: left;
+        white-space: normal;
+        margin-top: 0.15rem;
     }
 }
 

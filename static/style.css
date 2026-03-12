@@ -5,6 +5,7 @@
     src: url("SabonLTStd-Roman.otf") format("opentype");
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
     src: url("SabonLTStd-Italic.otf") format("opentype");
     font-style: italic;
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
@@ -19,6 +21,7 @@
     src: url("SabonLTStd-BoldItalic.ttf") format("truetype");
     font-style: italic;
     font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
@@ -26,6 +29,7 @@
     src: url("SabonLTStd-Bold.otf") format("opentype");
     font-style: normal;
     font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
@@ -33,6 +37,7 @@
     src: local("Optima Medium"), local("Optima");
     font-style: normal;
     font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
@@ -40,6 +45,7 @@
     src: url("Cronos Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
 }
 
 html {
@@ -73,6 +79,16 @@ body {
 }
 
 @media (max-width: 767.98px) {
+    .publication-card h6 {
+        padding-left: 2.4rem !important;
+        padding-right: 2.4rem !important;
+    }
+
+    .publication-card h6::after {
+        left: 2.4rem;
+        right: 2.4rem;
+    }
+
     .publication-title-row {
         display: block;
         align-items: flex-start;
@@ -85,6 +101,16 @@ body {
         justify-content: flex-start;
         margin-left: 0;
         margin-top: 0.5rem;
+    }
+
+    .section-card.publication-card .row.no-gutters > .col-12 {
+        padding-left: 2.4rem !important;
+        padding-right: 2.4rem !important;
+    }
+
+    .section-card.publication-card .row.no-gutters.border-bottom::after {
+        left: 2.4rem;
+        right: 2.4rem;
     }
 
     .section-card .row.no-gutters > .col-12 {
@@ -403,6 +429,12 @@ h6 {
     border-bottom: 1px solid #d1d5db;
 }
 
+.education-card h6,
+.publication-card h6,
+.activities-card h6 {
+    padding-top: 1.2rem !important;
+}
+
 .education-card .px-3 {
     padding-left: 2.5rem !important;
     padding-right: 2.5rem !important;
@@ -575,6 +607,16 @@ i,
 }
 
 @media (max-width: 767.98px) {
+    .publication-card h6 {
+        padding-left: 2.4rem !important;
+        padding-right: 2.4rem !important;
+    }
+
+    .publication-card h6::after {
+        left: 2.4rem;
+        right: 2.4rem;
+    }
+
     .publication-title-row {
         display: block;
     }
@@ -591,14 +633,24 @@ i,
         margin-top: 0.5rem;
     }
 
+    .section-card.publication-card .row.no-gutters > .col-12 {
+        padding-left: 2.4rem !important;
+        padding-right: 2.4rem !important;
+    }
+
+    .section-card.publication-card .row.no-gutters.border-bottom::after {
+        left: 2.4rem;
+        right: 2.4rem;
+    }
+
     .section-card .row.no-gutters > .col-12 {
         padding-left: 1.5rem !important;
         padding-right: 1.5rem !important;
     }
 
     .education-card .px-3 {
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
+        padding-left: 2.4rem !important;
+        padding-right: 2.4rem !important;
     }
 
     .edu-school {

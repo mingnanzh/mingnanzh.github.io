@@ -24,97 +24,68 @@
 
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-            integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="static/style.css" />
+        <link rel="stylesheet" href="static/style.css?v=20260710" />
     </head>
     <body>
-        <nav class="navbar fixed-top">
-            <div class="container-lg">
-                <a class="navbar-brand" href="./" aria-label="Mingnan Zhao home"
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+
+        <header class="site-header">
+            <div class="site-shell site-header-inner">
+                <a class="site-brand" href="./" aria-label="Mingnan Zhao home"
                     ><strong>Mingnan Zhao</strong></a
                 >
-                <div class="navbar-meta ml-auto">
-                    <span>Last Updated: Jul 2026</span>
+                <div class="site-meta">
+                    <span>Updated Jul 2026</span>
                 </div>
             </div>
-        </nav>
+        </header>
 
-        <div class="container-lg">
-            <div class="row">
-                <aside class="col-lg-3 col-md-4 profile-column">
-                    <div class="row sticky-top profile-sticky">
-                        <div class="col">
-                            <div class="card hero-profile-card">
-                                <div class="card-body profile-card-body">
-                                    <div class="row">
-                                        <h1 class="col text-center profile-name">
-                                            Mingnan Zhao
-                                        </h1>
-                                    </div>
-                                    <div class="row small">
-                                        <div class="col text-center">
-                                            Ph.D. Candidate<br />
-                                            Nanjing University
-                                        </div>
-                                    </div>
-                                    <div class="row small profile-email">
-                                        <div class="col text-center">
-                                            <a
-                                                class="email-text profile-link"
-                                                href="mailto:mingnanzh@gmail.com"
-                                                >mingnanzh(at)gmail.com</a
-                                            >
-                                        </div>
-                                    </div>
-                                    <div class="row profile-socials">
-                                        <div class="col text-center">
-                                            <a
-                                                class="no-break profile-link profile-social-link"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                aria-label="Mingnan Zhao on ORCID"
-                                                href="https://orcid.org/0009-0006-9623-9703"
-                                                ><i class="fab fa-orcid" aria-hidden="true"></i
-                                            ></a>
-                                            <a
-                                                class="no-break profile-link profile-social-link"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                aria-label="Mingnan Zhao on GitHub"
-                                                href="https://github.com/mingnanzh"
-                                                ><i class="fab fa-github" aria-hidden="true"></i
-                                            ></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="site-shell page-grid">
+                <aside class="profile-column" aria-label="Profile">
+                    <section class="hero-profile-card profile-card-body profile-sticky">
+                        <h1 class="profile-name">Mingnan Zhao</h1>
+                        <p class="profile-role">
+                            Ph.D. Candidate<br />
+                            Nanjing University
+                        </p>
+                        <p class="profile-email">
+                            <a
+                                class="email-text profile-link"
+                                href="mailto:mingnanzh@gmail.com"
+                                aria-label="Email Mingnan Zhao"
+                                >mingnanzh(at)gmail.com</a
+                            >
+                        </p>
+                        <div class="profile-socials">
+                            <a
+                                class="profile-link profile-social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Mingnan Zhao on ORCID, opens in a new tab"
+                                href="https://orcid.org/0009-0006-9623-9703"
+                                ><i class="fab fa-orcid" aria-hidden="true"></i></a
+                            >
+                            <a
+                                class="profile-link profile-social-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Mingnan Zhao on GitHub, opens in a new tab"
+                                href="https://github.com/mingnanzh"
+                                ><i class="fab fa-github" aria-hidden="true"></i></a
+                            >
                         </div>
-                    </div>
+                    </section>
                 </aside>
 
-                <main class="col-lg-9 col-md-8 content-column">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card about-card hero-about-card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h2 class="hero-eyebrow">About Me</h2>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="text-profile-bio">
-                                                <p>
+                <main class="content-column" id="main-content">
+                    <section class="about-card hero-about-card hero-about-content">
+                        <h2 class="hero-eyebrow">About Me</h2>
+                        <div class="text-profile-bio">
+                            <p>
                                                     I am currently pursuing my
                                                     Ph.D. in the <a class="inline-accent-link" href="https://tcs.nju.edu.cn/">Theory Group</a> in the School
                                                     of Computer Science at
@@ -132,31 +103,30 @@
                                                     interests in classical
                                                     pseudorandomness and
                                                     derandomization.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </p>
                         </div>
-                    </div>
+                    </section>
 
                     <section class="section-card education-card">
                         <h2 class="section-heading">
-                            <i class="fas fa-building-columns" aria-hidden="true"></i> Education
+                            <i class="fas fa-building-columns" aria-hidden="true"></i>
+                            Education
                         </h2>
                         <div class="education-list">
-                            <div class="media education-entry">
-                                <div class="media-body">
+                            <article class="education-entry">
                                     <div class="edu-school">
                                         <img
                                             src="static/nju.jpg"
-                                            alt="Nanjing University"
+                                            alt=""
                                             class="edu-icon"
+                                            width="26"
+                                            height="26"
+                                            loading="lazy"
+                                            decoding="async"
                                         />
                                         <span class="edu-title">Ph.D. Candidate in Computer Science</span>
                                         <span class="edu-time">
-                                            <span class="edu-date no-break"><i>Sept. 2020 – Present</i></span>
+                                            <span class="edu-date no-break"><time datetime="2020-09">Sept. 2020</time> – Present</span>
                                         </span>
                                     </div>
                                     <div class="edu-detail">
@@ -165,21 +135,23 @@
                                             <div class="edu-location">Nanjing, China</div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="media education-entry education-entry--divided">
-                                <div class="media-body">
+                            </article>
+                            <article class="education-entry education-entry--divided">
                                     <div class="edu-school">
                                         <img
                                             src="static/nju.jpg"
-                                            alt="Nanjing University"
+                                            alt=""
                                             class="edu-icon"
+                                            width="26"
+                                            height="26"
+                                            loading="lazy"
+                                            decoding="async"
                                         />
                                         <span class="edu-title">
                                             B.Sc. in Computer Science
                                         </span>
                                         <span class="edu-time">
-                                            <span class="edu-date no-break"><i>Sept. 2016 – Jun. 2020</i></span>
+                                            <span class="edu-date no-break"><time datetime="2016-09">Sept. 2016</time> – <time datetime="2020-06">Jun. 2020</time></span>
                                         </span>
                                     </div>
                                     <div class="edu-detail">
@@ -188,28 +160,24 @@
                                             <div class="edu-location">Nanjing, China</div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                            </article>
                         </div>
                     </section>
 
                     <section class="section-card publication-card">
                         <h2 class="section-heading">
-                            <i class="fas fa-file-lines" aria-hidden="true"></i> Publications and Preprints
+                            <i class="fas fa-file-lines" aria-hidden="true"></i>
+                            Publications and Preprints
                         </h2>
 
-                        <div>
-                            <div
-                                class="row no-gutters publication-entry publication-entry--divided"
-                            >
-                                <div class="col-12">
+                        <article class="publication-entry publication-entry--divided">
                                     <div class="publication-heading-group">
                                         <h3 class="publication-title">
                                             <span class="publication-title-row">
-                                                <a class="inline-accent-link small-caps-link" href="https://link.springer.com/chapter/10.1007/978-3-031-78017-2_1">Quantum Pseudorandom Scramblers</a>
+                                                <a class="inline-accent-link" href="https://link.springer.com/chapter/10.1007/978-3-031-78017-2_1">Quantum Pseudorandom Scramblers</a>
                                                 <span class="publication-title-actions">
-                                                    <a class="publication-button" href="https://arxiv.org/pdf/2309.08941" target="_blank" rel="noopener noreferrer">PDF</a>
-                                                    <a class="publication-button" href="static/prss.pdf" target="_blank" rel="noopener noreferrer">Slides</a>
+                                                    <a class="publication-button" href="https://arxiv.org/pdf/2309.08941" target="_blank" rel="noopener noreferrer" aria-label="PDF for Quantum Pseudorandom Scramblers, opens in a new tab">PDF</a>
+                                                    <a class="publication-button" href="static/prss.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides for Quantum Pseudorandom Scramblers, opens in a new tab">Slides</a>
                                                 </span>
                                             </span>
                                         </h3>
@@ -228,24 +196,18 @@
                                     <p class="small">
                                         Contributed talk at the <a class="conference-link" href="https://qipconference.org/2024/"><span class="conference-emphasis">27th <i class="conference-name">Quantum Information Processing Conference (<strong class="conf-abbr">QIP</strong>)</i></span></a>, January 2024.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
+                        </article>
 
-                        <div>
-                            <div
-                                class="row no-gutters publication-entry publication-entry--divided"
-                            >
-                                <div class="col-12">
+                        <article class="publication-entry publication-entry--divided">
                                     <div class="publication-heading-group">
                                         <h3 class="publication-title">
                                             <span class="publication-title-row">
-                                                <a class="inline-accent-link small-caps-link" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2025.134">A Pseudorandom Generator for Functions
+                                                <a class="inline-accent-link" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2025.134">A Pseudorandom Generator for Functions
                                                 of Low-Degree Polynomial Threshold
                                                 Functions</a>
                                                 <span class="publication-title-actions">
-                                                    <a class="publication-button" href="https://arxiv.org/pdf/2504.10904" target="_blank" rel="noopener noreferrer">PDF</a>
-                                                    <a class="publication-button" href="static/prg.pdf" target="_blank" rel="noopener noreferrer">Slides</a>
+                                                    <a class="publication-button" href="https://arxiv.org/pdf/2504.10904" target="_blank" rel="noopener noreferrer" aria-label="PDF for A Pseudorandom Generator for Functions of Low-Degree Polynomial Threshold Functions, opens in a new tab">PDF</a>
+                                                    <a class="publication-button" href="static/prg.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides for A Pseudorandom Generator for Functions of Low-Degree Polynomial Threshold Functions, opens in a new tab">Slides</a>
                                                 </span>
                                             </span>
                                         </h3>
@@ -257,20 +219,16 @@
                                     <p class="small">
                                         In the <a class="conference-link" href="https://conferences.au.dk/icalp2025"><span class="conference-emphasis">52nd <i class="conference-name">International Colloquium on Automata, Languages, and Programming</i> (<strong class="conf-abbr">ICALP</strong>)</span></a>, July 2025.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
+                        </article>
 
-                        <div>
-                            <div class="row no-gutters publication-entry">
-                                <div class="col-12">
+                        <article class="publication-entry">
                                     <div class="publication-heading-group">
                                         <h3 class="publication-title">
                                             <span class="publication-title-row">
-                                                <a class="inline-accent-link small-caps-link" href="https://arxiv.org/abs/2504.14957">Parallel Kac's Walk Generates <span class="sans-acronym">PRU</span></a>
+                                                <a class="inline-accent-link" href="https://arxiv.org/abs/2504.14957">Parallel Kac's Walk Generates <span class="sans-acronym">PRU</span></a>
                                                 <span class="publication-title-actions">
-                                                    <a class="publication-button" href="https://arxiv.org/pdf/2504.14957" target="_blank" rel="noopener noreferrer">PDF</a>
-                                                    <a class="publication-button" href="static/qcrypt25-poster.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+                                                    <a class="publication-button" href="https://arxiv.org/pdf/2504.14957" target="_blank" rel="noopener noreferrer" aria-label="PDF for Parallel Kac's Walk Generates PRU, opens in a new tab">PDF</a>
+                                                    <a class="publication-button" href="static/qcrypt25-poster.pdf" target="_blank" rel="noopener noreferrer" aria-label="Poster for Parallel Kac's Walk Generates PRU, opens in a new tab">Poster</a>
                                                 </span>
                                             </span>
                                         </h3>
@@ -283,22 +241,21 @@
                                     <p class="small">
                                         Poster at the <a class="conference-link" href="https://qip2025.duke.edu/"><span class="conference-emphasis">28th <i class="conference-name">Quantum Information Processing Conference</i> (<strong class="conf-abbr">QIP</strong>)</span></a>, February 2025 &amp; the <a class="conference-link" href="https://qcrypt.net/2025/"><span class="conference-emphasis">15th <i class="conference-name">International Conference on Quantum Cryptography</i> (<strong class="conf-abbr">QCrypt</strong>)</span></a>, August 2025.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
+                        </article>
                     </section>
 
                     <section class="section-card activities-card">
                         <h2 class="section-heading">
-                            <i class="fas fa-person-chalkboard" aria-hidden="true"></i> Research Activities
+                            <i class="fas fa-person-chalkboard" aria-hidden="true"></i>
+                            Research Activities
                         </h2>
                         <div class="activities-content">
                             <h3 class="activities-subtitle">Oral Presentations</h3>
 
                             <div class="activity-entry">
                                 <h4 class="activity-title">Quantum Pseudorandom Scramblers</h4>
-                                <div class="activity-line"><a class="inline-accent-link" href="https://www.youtube.com/watch?v=D0DaLLTdvf8">TCC 2024<i class="fas fa-arrow-up-right-from-square activity-link-icon" aria-hidden="true"></i></a>, Bocconi University, Milan, Italy, December 2024.</div>
-                                <div class="activity-line"><a class="inline-accent-link" href="https://www.youtube.com/watch?v=5I_HVEF3hOQ">QIP 2024<i class="fas fa-arrow-up-right-from-square activity-link-icon" aria-hidden="true"></i></a>, Taipei, China, January 2024.</div>
+                                <div class="activity-line"><a class="inline-accent-link" href="https://www.youtube.com/watch?v=D0DaLLTdvf8">TCC 2024<span class="external-mark" aria-hidden="true">↗</span></a>, Bocconi University, Milan, Italy, December 2024.</div>
+                                <div class="activity-line"><a class="inline-accent-link" href="https://www.youtube.com/watch?v=5I_HVEF3hOQ">QIP 2024<span class="external-mark" aria-hidden="true">↗</span></a>, Taipei, China, January 2024.</div>
                                 <div class="activity-line">NII Shonan Meeting - New Directions in Provable Quantum Advantages, Kanagawa, Japan, December 2023.</div>
                             </div>
 
@@ -327,7 +284,6 @@
                         <span>© 2026 Mingnan Zhao</span>
                     </footer>
                 </main>
-            </div>
         </div>
     </body>
 </html>

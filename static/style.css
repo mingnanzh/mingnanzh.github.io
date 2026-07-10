@@ -1,304 +1,352 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: "Sabon LT Std Roman";
-    src: url("SabonLTStd-Roman.otf") format("opentype");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Sabon LT Std Italic";
-    src: url("SabonLTStd-Italic.otf") format("opentype");
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Sabon LT Std Bold Italic";
-    src: url("SabonLTStd-BoldItalic.ttf") format("truetype");
-    font-style: italic;
-    font-weight: 700;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Sabon LT Std Bold";
-    src: url("SabonLTStd-Bold.otf") format("opentype");
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Optima Medium Local";
-    src: local("Optima Medium"), local("Optima");
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "CronosProLT-Regular";
-    src: url("Cronos Regular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
+:root {
+    --text: #1d1d1f;
+    --secondary: #6e6e73;
+    --tertiary: #86868b;
+    --blue: #0071e3;
+    --blue-hover: #0077ed;
+    --surface: #ffffff;
+    --canvas: #f5f5f7;
+    --separator: rgba(0, 0, 0, 0.09);
+    --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    --display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    --mono: "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
 }
 
 html {
-    /* Reserve symmetric scrollbar space so centered layouts stay visually centered. */
     scrollbar-gutter: stable both-edges;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Sabon LT Std Roman", Georgia, serif;
+    margin: 0;
+    padding-top: 5.75rem;
+    color: var(--text);
+    background: var(--canvas);
+    font-family: var(--font);
+    font-size: 1rem;
     font-weight: 400;
-    padding-top: 5.0rem;
-    font-size: 1.02rem;
-    line-height: 1.58;
-    color: #1f2328;
+    line-height: 1.55;
+    letter-spacing: -0.011em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body > .container-lg {
+    padding-bottom: 3rem;
 }
 
 @media (min-width: 1200px) {
     .container-lg {
-        max-width: 1320px;
+        max-width: 1120px;
     }
 
     .profile-column {
-        flex: 0 0 30%;
-        max-width: 30%;
+        flex: 0 0 29%;
+        max-width: 29%;
     }
 
     .content-column {
-        flex: 0 0 70%;
-        max-width: 70%;
+        flex: 0 0 71%;
+        max-width: 71%;
     }
-}
-
-@media (max-width: 767.98px) {
-    .publication-card h6 {
-        padding-left: 2.4rem !important;
-        padding-right: 2.4rem !important;
-    }
-
-    .publication-card h6::after {
-        left: 2.4rem;
-        right: 2.4rem;
-    }
-
-    .publication-title-row {
-        display: block;
-        align-items: flex-start;
-        gap: 0.45rem;
-    }
-
-    .publication-title-actions {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        margin-left: 0;
-        margin-top: 0.5rem;
-    }
-
-    .section-card.publication-card .row.no-gutters > .col-12 {
-        padding-left: 2.4rem !important;
-        padding-right: 2.4rem !important;
-    }
-
-    .section-card.publication-card .row.no-gutters.border-bottom::after {
-        left: 2.4rem;
-        right: 2.4rem;
-    }
-
-    .section-card .row.no-gutters > .col-12 {
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
-    }
-
-    .education-card .px-3 {
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
-    }
-
-    .edu-school {
-        grid-template-columns: 22px minmax(0, 1fr);
-        align-items: start;
-    }
-
-    .edu-time {
-        grid-column: 2;
-        justify-self: start;
-        text-align: left;
-        margin-top: 0.15rem;
-    }
-
-    .edu-detail {
-        padding-left: calc(22px + 0.45rem);
-    }
-
-    .edu-degree-row {
-        display: block;
-    }
-
-    .edu-location {
-        display: block;
-        text-align: left;
-        white-space: normal;
-        margin-top: 0.15rem;
-    }
-}
-
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "Sabon LT Std Roman", Georgia, serif;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-}
-
-.card {
-    border-radius: 0.8rem!important;
-}
-
-.card-img-overlay {
-    border-radius: 0.8rem!important;
-}
-
-.rounded-xl {
-    border-radius: 0.8rem!important;
-}
-
-.text-profile-bio {
-    font-weight: 400;
 }
 
 .navbar {
-    opacity: 0.95;
-}
-
-.no-break {
-    white-space: nowrap;
-}
-
-.email-text {
-    font-family: "IBM Plex Mono", monospace;
+    min-height: 3.4rem;
+    padding: 0.55rem 1rem;
+    background: rgba(250, 250, 252, 0.82);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: none;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 
 .navbar-brand {
-    font-family: "Cinzel", Georgia, serif;
-    font-size: 1.2rem;
+    margin: 0;
+    color: var(--text);
+    font-family: var(--display);
+    font-size: 1rem;
     font-weight: 600;
-    letter-spacing: 0.06em;
-}
-
-.profile-name {
-    font-family: "Optima Medium Local", "Optima", "Gill Sans", sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    margin-top: 0;
+    letter-spacing: -0.018em;
 }
 
 .navbar-meta {
-    font-family: "Optima Medium Local", "Optima", "Gill Sans", sans-serif;
-    font-style: normal;
-    font-size: 0.95rem;
-    font-variant-caps: normal;
-    font-feature-settings: normal;
-    letter-spacing: normal;
-    color: rgba(255, 255, 255, 0.82);
+    color: var(--secondary);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: -0.005em;
+}
+
+.hero-profile-card,
+.hero-about-card,
+.section-card {
+    overflow: hidden;
+    background: var(--surface);
+    border: 0;
+    border-radius: 1.75rem;
+    box-shadow: none;
+}
+
+.profile-sticky {
+    top: 5rem;
 }
 
 .profile-card-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 0rem !important;
-    padding-right: 0rem !important;
-    padding-top: 1.8rem !important;
+    padding: 2.25rem 1.7rem;
 }
 
 .profile-card-body > .row {
     margin-bottom: 0.45rem;
 }
 
-.profile-card-body > .row:last-child {
-    margin-bottom: 0;
+.profile-name {
+    margin: 0;
+    font-family: var(--display);
+    font-size: 1.55rem;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
 }
 
-.h3,
-h3 {
-    font-family: "Optima Medium Local", "Optima", "Gill Sans", sans-serif;
-    font-size: 1.7rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    font-variant-caps: small-caps;
-    font-feature-settings: "smcp" 1, "c2sc" 1;
+.profile-card-body .small {
+    color: var(--secondary);
+    font-size: 0.96rem;
+    line-height: 1.45;
+    letter-spacing: -0.006em;
 }
 
-h6 {
-    font-family: "Optima Medium Local", "Optima", "Gill Sans", sans-serif;
-    font-size: 1.22rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    font-variant-caps: small-caps;
-    font-feature-settings: "smcp" 1, "c2sc" 1;
+.profile-email {
+    margin-top: 1rem;
 }
 
-.card-body,
-.media,
-.small {
-    font-size: 1rem;
+.email-text {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    letter-spacing: -0.025em;
 }
 
-.text-profile-bio p {
-    font-size: 1.08rem;
-    line-height: 1.75;
+.profile-socials {
+    margin-top: 0.35rem;
 }
 
-.inline-accent-link {
-    color: #006284;
+.profile-social-link {
+    display: inline-flex;
+    padding: 0.15rem 0.35rem;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.profile-link,
+.inline-accent-link,
+.author-link,
+.conference-link {
+    color: var(--blue);
     text-decoration: none;
-    border-bottom: 1px solid transparent;
-}
-
-.inline-accent-link:hover,
-.inline-accent-link:focus {
-    color: #004d67;
-    text-decoration: none;
-    border-bottom-color: rgba(0, 77, 103, 0.6);
-}
-
-.profile-link {
-    color: #006284;
-    text-decoration: none;
+    transition: color 160ms ease;
 }
 
 .profile-link:hover,
-.profile-link:focus {
-    color: #004d67;
-    text-decoration: none;
+.profile-link:focus,
+.inline-accent-link:hover,
+.inline-accent-link:focus,
+.author-link:hover,
+.author-link:focus,
+.conference-link:hover,
+.conference-link:focus {
+    color: var(--blue-hover);
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
 }
 
-.small-caps-link {
-    font-variant-caps: small-caps;
-    font-feature-settings: "smcp" 1;
-    letter-spacing: 0.03em;
+.hero-about-card {
+    position: relative;
+    min-height: 100%;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(0, 113, 227, 0.075), transparent 19rem),
+        var(--surface);
 }
 
-.sans-acronym {
-    font-family: "Optima Medium Local", "Optima", "Gill Sans", sans-serif;
+.hero-about-card .card-body {
+    padding: 2.65rem 2.4rem 2.55rem;
+}
+
+.hero-about-card .row {
+    margin: 0;
+}
+
+.hero-about-card .col {
+    padding: 0;
+}
+
+.hero-eyebrow {
+    margin: 0 0 1.15rem;
+    color: var(--text);
+    font-family: var(--display);
+    font-size: 1.85rem;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+}
+
+.text-profile-bio p {
+    max-width: 42rem;
+    margin: 0;
+    color: var(--secondary);
+    font-size: 1.08rem;
+    line-height: 1.62;
+    letter-spacing: -0.018em;
+}
+
+.section-card {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.section-heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0;
+    padding: 1.45rem 2.4rem 1.05rem;
+    color: var(--text);
+    border: 0;
+    font-family: var(--display);
+    font-size: 1.28rem;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+}
+
+.section-heading::after {
+    content: "";
+    position: absolute;
+    right: 2.4rem;
+    bottom: 0;
+    left: 2.4rem;
+    border-bottom: 1px solid var(--separator);
+}
+
+.section-heading i {
+    color: var(--blue);
+    font-family: "Font Awesome 6 Free";
+    font-size: 0.75em;
     font-style: normal;
-    font-variant-caps: normal;
-    font-feature-settings: normal;
-    letter-spacing: 0.02em;
+}
+
+.section-card .row.no-gutters > .col-12 {
+    padding: 1.5rem 2.4rem;
+}
+
+.publication-entry {
+    position: relative;
+}
+
+.publication-entry--divided::after {
+    content: "";
+    position: absolute;
+    right: 2.4rem;
+    bottom: 0;
+    left: 2.4rem;
+    border-bottom: 1px solid var(--separator);
+}
+
+.education-list,
+.activities-content {
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+}
+
+.education-card .media {
+    padding-top: 1.05rem;
+    padding-bottom: 1.05rem;
+}
+
+.education-card .media:first-child {
+    padding-top: 1.5rem;
+}
+
+.education-card .media:last-child {
+    padding-bottom: 1.5rem;
+}
+
+.education-entry--divided {
+    border-top: 1px solid var(--separator);
+}
+
+.education-card .edu-school {
+    margin-top: 0;
+    margin-bottom: 0.35rem;
+}
+
+.education-card .edu-detail {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.edu-school {
+    display: grid;
+    grid-template-columns: 26px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.edu-title {
+    color: var(--text);
+    font-family: var(--display);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.018em;
+}
+
+.edu-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 0.42rem;
+    object-fit: contain;
+}
+
+.edu-detail {
+    padding-left: calc(26px + 0.7rem);
+}
+
+.edu-degree-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.edu-degree,
+.edu-time,
+.edu-location {
+    color: var(--secondary);
+    font-size: 0.93rem;
+    font-style: normal;
+}
+
+.edu-time,
+.edu-location {
+    white-space: nowrap;
+}
+
+.edu-location {
+    text-align: right;
 }
 
 .publication-title {
-    font-variant-caps: small-caps;
-    font-feature-settings: "smcp" 1;
-    letter-spacing: 0.03em;
+    margin: 0 0 0.1rem;
+    color: var(--text);
+    font-family: var(--display);
+    font-size: 1.12rem;
+    font-weight: 600;
+    line-height: 1.32;
+    letter-spacing: -0.026em;
 }
 
 .publication-title-row {
@@ -318,369 +366,271 @@ h6 {
 .publication-title-actions {
     display: inline-flex;
     align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 0.45rem;
     flex: 0 0 auto;
+    gap: 0.42rem;
     margin-left: auto;
 }
 
 .publication-button {
-    display: inline-block;
-    padding: 0.15rem 0.55rem;
-    border: 1px solid rgba(0, 98, 132, 0.28);
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.7rem;
+    padding: 0.18rem 0.7rem;
+    border: 0;
     border-radius: 999px;
-    color: #006284;
-    font-family: "CronosProLT-Regular", serif;
-    font-size: 0.84rem;
-    line-height: 1.3;
+    color: var(--blue);
+    background: rgba(0, 113, 227, 0.09);
+    font-family: var(--font);
+    font-size: 0.78rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.005em;
     text-decoration: none;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    transition: background 160ms ease, color 160ms ease;
 }
 
 .publication-button:hover,
 .publication-button:focus {
-    color: #004d67;
+    color: #fff;
+    background: var(--blue);
     text-decoration: none;
-    border-color: rgba(0, 77, 103, 0.45);
-    background-color: rgba(0, 98, 132, 0.05);
+}
+
+.publication-card p {
+    margin: 0;
+    color: #515154;
+    line-height: 1.48;
+    letter-spacing: -0.011em;
+}
+
+.publication-card p + p {
+    margin-top: 0.22rem;
+}
+
+.publication-heading-group {
+    margin-bottom: 0.65rem;
+}
+
+.publication-card .small {
+    font-size: 0.94rem;
 }
 
 .publication-authors {
-    color: #8a9099;
-}
-
-.author-link {
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-}
-
-.author-link:hover,
-.author-link:focus {
-    color: #006284;
-    text-decoration: none;
-    border-bottom-color: rgba(0, 98, 132, 0.45);
+    color: var(--tertiary);
 }
 
 .publication-authors strong {
-    color: #1f2328;
-    font-weight: 400;
+    color: var(--text);
+    font-weight: 500;
 }
 
-.conf-abbr {
-    font-family: "Sabon LT Std Bold Italic", "Sabon LT Std Italic", "Sabon LT Std Roman", Georgia, serif;
-    font-style: italic;
-    font-weight: 700;
-}
-
-.conference-name {
-    font-family: "Sabon LT Std Bold Italic", "Sabon LT Std Italic", "Sabon LT Std Roman", Georgia, serif;
-    font-style: italic;
-    font-weight: 700;
-}
-
-.conference-emphasis {
-    font-family: "Sabon LT Std Bold Italic", "Sabon LT Std Italic", "Sabon LT Std Roman", Georgia, serif;
-    font-style: italic;
-    font-weight: 700;
-}
-
+.author-link,
 .conference-link {
     color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-}
-
-.conference-link:hover,
-.conference-link:focus {
-    color: #006284;
-    text-decoration: none;
-    border-bottom-color: rgba(0, 98, 132, 0.45);
-}
-
-.about-card .card-body {
-    padding-bottom: 1.1rem !important;
-}
-
-.about-card .row.p-3 {
-    padding-top: 0.85rem !important;
-    padding-bottom: 0.4rem !important;
-}
-
-.about-card .text-profile-bio p {
-    margin-bottom: 0.2rem;
-}
-
-.section-card h6 {
-    position: relative;
-    border-bottom: 0 !important;
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
-}
-
-.section-card h6::after {
-    content: "";
-    position: absolute;
-    left: 2.5rem;
-    right: 2.5rem;
-    bottom: 0;
-    border-bottom: 1px solid #d1d5db;
-}
-
-.education-card h6,
-.publication-card h6,
-.activities-card h6 {
-    padding-top: 1.2rem !important;
-}
-
-.education-card .px-3 {
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
-}
-
-.education-card .media {
-    padding-top: 0.72rem !important;
-    padding-bottom: 0.55rem !important;
-}
-
-.education-card .edu-school,
-.education-card .edu-detail {
-    margin-top: 0.35rem !important;
-    margin-bottom: 0.35rem !important;
-}
-
-.section-card .row.no-gutters > .col-md-3,
-.section-card .row.no-gutters > .col-xl-2 {
-    padding-left: 2.5rem !important;
-}
-
-.section-card .row.no-gutters > .col-md-9,
-.section-card .row.no-gutters > .col-xl-10 {
-    padding-right: 2.5rem !important;
-}
-
-.section-card .row.no-gutters > .col-12 {
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
-}
-
-.section-card .row.no-gutters.border-bottom {
-    position: relative;
-    border-bottom: 0 !important;
-}
-
-.section-card .row.no-gutters.border-bottom::after {
-    content: "";
-    position: absolute;
-    left: 2.5rem;
-    right: 2.5rem;
-    bottom: 0;
-    border-bottom: 1px solid #d1d5db;
-}
-
-.card-body,
-.media,
-.small,
-.text-muted,
-.btn,
-.navbar,
-.navbar-toggler {
-    font-family: "Sabon LT Std Roman", Georgia, serif;
-}
-
-.edu-school {
-    display: grid;
-    grid-template-columns: 22px minmax(0, 1fr) auto;
-    align-items: center;
-    gap: 0.45rem;
-    font-weight: 600;
-}
-
-.edu-title {
-    font-family: "Sabon LT Std Bold", "Sabon LT Std Roman", Georgia, serif;
-    font-weight: 700;
-}
-
-.edu-icon {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
-    flex: 0 0 auto;
-}
-
-.edu-detail {
-    padding-left: calc(22px + 0.45rem);
-}
-
-.edu-degree {
-    line-height: 1.55;
-}
-
-.edu-degree-row {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.edu-location {
-    font-family: "Sabon LT Std Italic", "Sabon LT Std Roman", Georgia, serif;
-    font-style: italic;
-    font-size: 0.94em;
-    text-align: right;
-    white-space: nowrap;
-}
-
-.edu-time {
-    justify-self: end;
-    text-align: right;
-    line-height: 1.35;
-}
-
-.activities-card .px-3 {
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
-    padding-bottom: 1.5rem !important;
-}
-
-.activities-subtitle {
-    margin-bottom: 0.45rem;
-    font-family: "Cinzel", Georgia, serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    font-variant-caps: small-caps;
-    font-feature-settings: "smcp" 1, "c2sc" 1;
-}
-
-.activity-entry {
-    position: relative;
-    padding-left: 1.25rem;
-    margin-bottom: 0.6rem;
-}
-
-.activity-entry:last-child {
-    margin-bottom: 0;
-}
-
-.activity-entry::before {
-    content: "\25C7";
-    scale: 0.8;
-    position: absolute;
-    left: 0;
-    top: -0.07rem;
-    color: #c61f3a;
-    font-size: 0.95rem;
-}
-
-.activity-title {
-    margin-bottom: 0.2rem;
-    font-family: "Sabon LT Std Bold Italic", "Sabon LT Std Italic", "Sabon LT Std Roman", Georgia, serif;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.4;
-}
-
-.activity-line {
-    padding-left: 0.05rem;
-    line-height: 1.45;
-}
-
-.reviewer-entry {
-    padding-left: 1.25rem;
-    margin-bottom: 0.2rem;
-}
-
-.reviewer-list {
-    font-family: "Sabon LT Std Italic", "Sabon LT Std Roman", Georgia, serif;
-    font-style: italic;
-    font-size: 1rem;
-    line-height: 1.45;
-}
-
-.activity-link-icon {
-    font-size: 0.58em;
-    color: #006284;
-    vertical-align: super;
-    position: relative;
-    top: -0.08em;
-    margin-left: 0.05em;
 }
 
 em,
 i,
 .entry-subtitle,
-.edu-time {
-    font-family: "Sabon LT Std Italic", "Sabon LT Std Roman", Georgia, serif;
+.edu-time,
+.edu-location,
+.reviewer-list,
+.conf-abbr,
+.conference-name,
+.conference-emphasis,
+.activity-title {
+    font-family: var(--font);
     font-style: italic;
-    font-size: 0.94em;
+}
+
+.conf-abbr,
+.conference-name,
+.conference-emphasis,
+.activity-title {
+    font-weight: 600;
+}
+
+.activities-content {
+    padding-top: 1.5rem;
+    padding-bottom: 1.75rem;
+}
+
+.activities-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0 0 0.9rem;
+    color: var(--text);
+    font-family: var(--display);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.018em;
+}
+
+.activities-subtitle::before {
+    content: "";
+    width: 3px;
+    height: 1rem;
+    flex: 0 0 3px;
+    border-radius: 999px;
+    background: var(--blue);
+}
+
+.activities-subtitle:not(:first-child) {
+    margin-top: 2.1rem;
+}
+
+.activity-entry,
+.reviewer-entry {
+    position: relative;
+    margin-bottom: 1.15rem;
+    padding-left: 1.15rem;
+}
+
+.activity-entry::before {
+    content: "";
+    position: absolute;
+    top: 0.65rem;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--blue);
+}
+
+.activity-title {
+    margin: 0 0 0.25rem;
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.activity-line,
+.reviewer-list {
+    color: var(--secondary);
+    font-size: 0.96rem;
+    line-height: 1.55;
+}
+
+.activity-line + .activity-line {
+    margin-top: 0.18rem;
+}
+
+.reviewer-entry {
+    margin-bottom: 0;
+}
+
+.activity-link-icon {
+    position: relative;
+    top: -0.08em;
+    margin-left: 0.14em;
+    color: var(--blue);
+    font-family: "Font Awesome 6 Free";
+    font-size: 0.58em;
+    font-style: normal;
+    vertical-align: super;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.35rem;
+    color: var(--tertiary);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: -0.004em;
+}
+
+.no-break {
+    white-space: nowrap;
+}
+
+.sans-acronym {
+    font-family: var(--font);
+    font-style: normal;
 }
 
 @media (max-width: 767.98px) {
-    .publication-card h6 {
-        padding-left: 2.4rem !important;
-        padding-right: 2.4rem !important;
+    body {
+        padding-top: 4.7rem;
     }
 
-    .publication-card h6::after {
-        left: 2.4rem;
-        right: 2.4rem;
+    body > .container-lg {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar {
+        min-height: 3.1rem;
+    }
+
+    .navbar-meta {
+        font-size: 0.82rem;
+    }
+
+    .profile-column .sticky-top {
+        position: static;
+    }
+
+    .content-column {
+        padding-top: 1rem;
+    }
+
+    .hero-about-card .card-body {
+        padding: 2.25rem 1.5rem 2.15rem;
+    }
+
+    .hero-eyebrow {
+        font-size: 1.7rem;
+    }
+
+    .text-profile-bio p {
+        font-size: 1.02rem;
+    }
+
+    .section-card {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-heading,
+    .section-card .row.no-gutters > .col-12,
+    .education-list,
+    .activities-content {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .section-heading::after,
+    .publication-entry--divided::after {
+        right: 1.5rem;
+        left: 1.5rem;
+    }
+
+    .activities-subtitle:not(:first-child) {
+        margin-top: 1.8rem;
     }
 
     .publication-title-row {
         display: block;
     }
 
-    .publication-title-row > a {
-        display: block;
-    }
-
     .publication-title-actions {
         display: flex;
         justify-content: flex-start;
-        flex-wrap: wrap;
-        margin-left: 0;
-        margin-top: 0.5rem;
-    }
-
-    .section-card.publication-card .row.no-gutters > .col-12 {
-        padding-left: 2.4rem !important;
-        padding-right: 2.4rem !important;
-    }
-
-    .section-card.publication-card .row.no-gutters.border-bottom::after {
-        left: 2.4rem;
-        right: 2.4rem;
-    }
-
-    .section-card .row.no-gutters > .col-12 {
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
-    }
-
-    .education-card .px-3 {
-        padding-left: 2.4rem !important;
-        padding-right: 2.4rem !important;
+        margin: 0.65rem 0 0;
     }
 
     .edu-school {
-        grid-template-columns: 22px minmax(0, 1fr);
+        grid-template-columns: 26px minmax(0, 1fr);
         align-items: start;
     }
 
     .edu-time {
-        display: block;
         grid-column: 2;
         justify-self: start;
-        text-align: left;
-        margin-top: 0.15rem;
-    }
-
-    .edu-detail {
-        padding-left: calc(22px + 0.45rem);
+        white-space: normal;
     }
 
     .edu-degree-row {
@@ -689,8 +639,16 @@ i,
 
     .edu-location {
         display: block;
+        margin-top: 0.15rem;
         text-align: left;
         white-space: normal;
-        margin-top: 0.15rem;
+    }
+
+    .site-footer {
+        display: block;
+    }
+
+    .site-footer span {
+        display: block;
     }
 }

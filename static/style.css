@@ -7,6 +7,8 @@
     --accent: #244f80;
     --accent-hover: #153a63;
     --separator: #e4e7eb;
+    --section-space: 1.25rem;
+    --section-bottom-extra: 0.375rem;
     --section-indent: 2.15rem;
     --detail-indent: 1rem;
     --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -77,7 +79,7 @@ a:focus-visible {
 .site-shell {
     width: min(100% - 3rem, 860px);
     margin-inline: auto;
-    padding-top: clamp(2.75rem, 5vw, 4rem);
+    padding-top: clamp(2rem, 4vw, 3rem);
     padding-bottom: 2rem;
 }
 
@@ -86,7 +88,7 @@ a:focus-visible {
     align-items: baseline;
     justify-content: space-between;
     gap: 1.5rem 2rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.125rem;
     border-bottom: 1px solid var(--separator);
 }
 
@@ -130,17 +132,17 @@ a:focus-visible {
 }
 
 .about-section {
-    margin-top: 1.5rem;
+    margin-top: var(--section-space);
 }
 
 .text-profile-bio {
     max-width: 49rem;
     font-size: 1.0625rem;
-    line-height: 1.8;
+    line-height: 1.65;
 }
 
 .text-profile-bio + .text-profile-bio {
-    margin-top: 0.75rem;
+    margin-top: 0.625rem;
 }
 
 .text-profile-bio a,
@@ -149,8 +151,8 @@ a:focus-visible {
 }
 
 .content-section {
-    margin-top: 3.25rem;
-    padding-top: 1.5rem;
+    margin-top: calc(var(--section-space) + var(--section-bottom-extra));
+    padding-top: var(--section-space);
     border-top: 2px solid #c4cdd7;
 }
 
@@ -179,7 +181,7 @@ a:focus-visible {
 }
 
 .publication-entry {
-    margin-top: 1.75rem;
+    margin-top: 1.25rem;
 }
 
 .publication-authors,
@@ -188,8 +190,8 @@ a:focus-visible {
 }
 
 .publication-entry + .publication-entry {
-    margin-top: 1.6rem;
-    padding-top: 1.6rem;
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
     border-top: 1px solid var(--separator);
 }
 
@@ -264,12 +266,11 @@ a:focus-visible {
 }
 
 .conf-abbr {
-    color: var(--text);
     font-weight: 600;
 }
 
 .education-entry {
-    margin-top: 1.75rem;
+    margin-top: 1.25rem;
 }
 
 .edu-school,
@@ -311,24 +312,44 @@ a:focus-visible {
 }
 
 .activities-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
     color: var(--accent);
-    margin-top: 1.75rem;
-    margin-bottom: 0.8rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.6rem;
     font-size: 1rem;
     font-weight: 600;
 }
 
+.activity-icon {
+    flex: 0 0 1.05rem;
+    width: 1.05rem;
+    height: 1.05rem;
+}
+
+.activity-details {
+    margin: 0;
+    padding-inline-start: 1.1rem;
+    list-style-type: disc;
+}
+
+.activity-details > li::marker {
+    color: var(--accent);
+    font-size: 0.7em;
+}
+
 .activities-subtitle:not(:first-child) {
-    margin-top: 1.75rem;
+    margin-top: 1.375rem;
 }
 
 .activity-entry,
 .reviewer-entry {
-    padding-inline-start: var(--detail-indent);
+    padding-inline-start: 1.65rem;
 }
 
 .activity-entry + .activity-entry {
-    margin-top: 1.15rem;
+    margin-top: 1rem;
 }
 
 .activity-title {
@@ -358,8 +379,8 @@ a:focus-visible {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 0.5rem 1.5rem;
-    margin-top: 3.5rem;
-    padding-top: 1rem;
+    margin-top: calc(var(--section-space) + var(--section-bottom-extra));
+    padding-top: var(--section-space);
     border-top: 1px solid var(--separator);
     color: var(--secondary);
     font-size: 0.8125rem;
@@ -370,7 +391,7 @@ a:focus-visible {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.8rem;
-        padding-bottom: 1.25rem;
+        padding-bottom: 1rem;
     }
 
     .profile-links {
@@ -386,8 +407,9 @@ a:focus-visible {
 
 @media (max-width: 600px) {
     .site-shell {
+        --section-space: 1rem;
         width: calc(100% - 2.5rem);
-        padding-top: 2.75rem;
+        padding-top: 2rem;
     }
 
     .profile-links {
@@ -397,8 +419,6 @@ a:focus-visible {
     .content-section {
         --section-indent: 0.75rem;
         --detail-indent: 0.5rem;
-        margin-top: 2.75rem;
-        padding-top: 1.25rem;
     }
 
     .section-heading {

@@ -142,7 +142,6 @@ a:focus-visible {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    flex: 0 1 auto;
     gap: 0.15rem 1.25rem;
     font-size: 0.875rem;
 }
@@ -246,14 +245,6 @@ a:focus-visible {
     flex-wrap: wrap;
     align-items: baseline;
     gap: 0.25rem 1.5rem;
-}
-
-.publication-title a {
-    color: var(--accent);
-}
-
-.publication-title a:hover {
-    color: var(--accent-hover);
 }
 
 .publication-title-actions {
@@ -435,12 +426,10 @@ a:focus-visible {
     }
 
     .profile-links {
-        flex: 0 1 auto;
         justify-content: flex-start;
     }
 
     .profile-links .email-text {
-        flex-basis: auto;
         justify-content: flex-start;
     }
 }

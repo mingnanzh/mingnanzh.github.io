@@ -1,6 +1,14 @@
 @charset "utf-8";
 
 @font-face {
+    font-family: "I.Ming Web";
+    src: url("fonts/I.Ming-8.10.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Kumbh Sans";
     src: url("fonts/KumbhSans-Variable.ttf") format("truetype");
     font-style: normal;
@@ -102,10 +110,22 @@ a:focus-visible {
 }
 
 .profile-name {
+    flex-shrink: 0;
     font-size: clamp(2rem, 4vw, 2.65rem);
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: -0.04em;
+}
+
+.profile-name-zh {
+    color: var(--secondary);
+    display: inline-block;
+    margin-inline-start: 0.3em;
+    font-family: "I.Ming Web", "I.Ming", serif;
+    font-size: 0.5em;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
 }
 
 .profile-name,

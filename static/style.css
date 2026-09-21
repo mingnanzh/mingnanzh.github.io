@@ -54,7 +54,7 @@ body {
     background: #fff;
     color: var(--text);
     font-family: var(--font-sans);
-    font-size: 1rem;
+    font-size: 1.0625rem;
     font-optical-sizing: auto;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
@@ -93,8 +93,15 @@ a:focus-visible {
     transform: translateY(0);
 }
 
+.resource-icons {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
 .site-shell {
-    width: min(100% - 3rem, 880px);
+    width: min(100% - 3rem, 940px);
     margin-inline: auto;
     padding-top: clamp(1.5rem, 3vw, 2rem);
     padding-bottom: 1.5rem;
@@ -143,7 +150,7 @@ a:focus-visible {
     justify-content: flex-end;
     align-items: center;
     gap: 0.15rem 1.25rem;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
 }
 
 .profile-links .email-text {
@@ -173,7 +180,7 @@ a:focus-visible {
 }
 
 .text-profile-bio {
-    font-size: 0.9375rem;
+    font-size: 1rem;
     line-height: 1.55;
 }
 
@@ -196,7 +203,7 @@ a:focus-visible {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    font-size: 1.4375rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.35;
     letter-spacing: -0.025em;
@@ -234,7 +241,7 @@ a:focus-visible {
 .publication-title {
     flex: 1 1 26rem;
     min-width: 0;
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: -0.012em;
@@ -254,10 +261,23 @@ a:focus-visible {
 }
 
 .publication-resource {
+    gap: 0.3rem;
     font-size: 0.875rem;
     font-weight: 600;
     letter-spacing: 0.01em;
     text-decoration-color: #bbcbdc;
+}
+
+.resource-icon {
+    display: block;
+    flex: 0 0 0.9rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .publication-authors {
@@ -270,7 +290,7 @@ a:focus-visible {
 
 .publications p {
     color: var(--secondary);
-    font-size: 0.9375rem;
+    font-size: 1rem;
     line-height: 1.55;
 }
 
@@ -310,7 +330,7 @@ a:focus-visible {
 }
 
 .edu-title {
-    font-size: 1rem;
+    font-size: 1.0625rem;
     font-weight: 600;
     letter-spacing: -0.012em;
 }
@@ -324,7 +344,7 @@ a:focus-visible {
 .edu-time,
 .edu-location {
     color: var(--secondary);
-    font-size: 0.9375rem;
+    font-size: 1rem;
 }
 
 .edu-degree i {
@@ -348,7 +368,7 @@ a:focus-visible {
     color: var(--accent);
     margin-top: 0.875rem;
     margin-bottom: 0.45rem;
-    font-size: 1rem;
+    font-size: 1.0625rem;
     font-weight: 600;
 }
 
@@ -385,7 +405,7 @@ a:focus-visible {
 .activity-title {
     margin-bottom: 0.3rem;
     letter-spacing: -0.012em;
-    font-size: 1rem;
+    font-size: 1.0625rem;
     font-weight: 600;
     line-height: 1.55;
 }
@@ -393,7 +413,7 @@ a:focus-visible {
 .activity-line,
 .reviewer-list {
     color: var(--secondary);
-    font-size: 0.9375rem;
+    font-size: 1rem;
 }
 
 .activity-line + .activity-line {
@@ -414,7 +434,7 @@ a:focus-visible {
     padding-top: var(--section-space);
     border-top: 1px solid var(--separator);
     color: var(--secondary);
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
 }
 
 @media (max-width: 760px) {
@@ -452,7 +472,7 @@ a:focus-visible {
 
     .section-heading {
         gap: 0.65rem;
-        font-size: 1.25rem;
+        font-size: 1.3125rem;
     }
 
     .edu-school,

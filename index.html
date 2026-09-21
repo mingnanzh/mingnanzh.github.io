@@ -23,10 +23,21 @@
         <link rel="icon" type="image/svg+xml" href="static/favicon.svg?v=4" />
 
         <link rel="preload" href="static/fonts/KumbhSans-Variable.ttf" as="font" type="font/ttf" crossorigin />
-        <link rel="stylesheet" href="static/style.css?v=20260919-clean" />
+        <link rel="stylesheet" href="static/style.css?v=20260921-small-resources" />
     </head>
     <body>
         <a class="skip-link" href="#main-content">Skip to main content</a>
+        <svg class="resource-icons" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <symbol id="icon-arxiv" viewBox="0 0 24 24">
+                <path d="M6 3.5h8l4 4V20.5H6zM14 3.5v4h4M9 12h6M9 15h6" />
+            </symbol>
+            <symbol id="icon-poster" viewBox="0 0 24 24">
+                <path d="M4 4.5h16v12H4zM12 16.5v4M8 20.5h8M7 8h10M7 11h6" />
+            </symbol>
+            <symbol id="icon-slides" viewBox="0 0 24 24">
+                <path d="M3 4.5h18v13H3zM12 17.5v3M8 20.5h8M7 8h10M7 11h6" />
+            </symbol>
+        </svg>
 
         <main class="site-shell" id="main-content">
             <header class="profile-header">
@@ -83,7 +94,7 @@
                         <div class="edu-school">
                             <span class="edu-title">Ph.D. Candidate in Computer Science</span>
                             <span class="edu-time">
-                                <span class="no-break"><time datetime="2020-09">Sept. 2020</time> – Present</span>
+                                <span class="no-break"><time datetime="2020-09">Sept. 2020</time> – <time datetime="2026-09">Sept. 2026</time></span>
                             </span>
                         </div>
                         <div class="edu-detail">
@@ -122,11 +133,30 @@
                     <div class="publication-heading-group">
                         <div class="publication-title-row">
                             <h3 class="publication-title">
+                                <a href="https://arxiv.org/abs/2609.21329">Fooling Thresholds of Halfspaces</a>
+                            </h3>
+                            <div class="publication-title-actions">
+                                <a class="publication-resource" href="https://arxiv.org/abs/2609.21329" target="_blank" rel="noopener noreferrer" aria-label="arXiv abstract for Fooling Thresholds of Halfspaces, opens in a new tab"><svg class="resource-icon" aria-hidden="true"><use href="#icon-arxiv" /></svg>arXiv</a>
+                            </div>
+                        </div>
+                        <p class="publication-authors">
+                            <a class="author-link" href="https://tsdjh.github.io/">Minglong Qin</a>,
+                            <a class="author-link" href="https://penghuiyao.info/">Penghui Yao</a>,
+                            <strong>Mingnan Zhao</strong>, Haigang Zhou
+                        </p>
+                    </div>
+                    <p>arXiv:2609.21329 [cs.CC]</p>
+                </article>
+
+                <article class="publication-entry">
+                    <div class="publication-heading-group">
+                        <div class="publication-title-row">
+                            <h3 class="publication-title">
                                     <a href="https://arxiv.org/abs/2504.14957">Parallel Kac's Walk Generates PRU</a>
                             </h3>
                             <div class="publication-title-actions">
-                                <a class="publication-resource" href="https://arxiv.org/abs/2504.14957" target="_blank" rel="noopener noreferrer" aria-label="arXiv abstract for Parallel Kac's Walk Generates PRU, opens in a new tab">arXiv</a>
-                                <a class="publication-resource" href="static/qcrypt25-poster.pdf" target="_blank" rel="noopener noreferrer" aria-label="Poster for Parallel Kac's Walk Generates PRU, opens in a new tab">Poster</a>
+                                <a class="publication-resource" href="https://arxiv.org/abs/2504.14957" target="_blank" rel="noopener noreferrer" aria-label="arXiv abstract for Parallel Kac's Walk Generates PRU, opens in a new tab"><svg class="resource-icon" aria-hidden="true"><use href="#icon-arxiv" /></svg>arXiv</a>
+                                <a class="publication-resource" href="static/qcrypt25-poster.pdf" target="_blank" rel="noopener noreferrer" aria-label="Poster for Parallel Kac's Walk Generates PRU, opens in a new tab"><svg class="resource-icon" aria-hidden="true"><use href="#icon-poster" /></svg>Poster</a>
                             </div>
                         </div>
                         <p class="publication-authors">
@@ -147,8 +177,8 @@
                                     <a href="https://epubs.siam.org/doi/10.1137/24M170990X">Quantum Pseudorandom Scramblers</a>
                             </h3>
                             <div class="publication-title-actions">
-                                <a class="publication-resource" href="https://arxiv.org/abs/2309.08941" target="_blank" rel="noopener noreferrer" aria-label="arXiv abstract for Quantum Pseudorandom Scramblers, opens in a new tab">arXiv</a>
-                                <a class="publication-resource" href="static/prss.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides for Quantum Pseudorandom Scramblers, opens in a new tab">Slides</a>
+                                <a class="publication-resource" href="https://arxiv.org/abs/2309.08941" target="_blank" rel="noopener noreferrer" aria-label="arXiv abstract for Quantum Pseudorandom Scramblers, opens in a new tab"><svg class="resource-icon" aria-hidden="true"><use href="#icon-arxiv" /></svg>arXiv</a>
+                                <a class="publication-resource" href="static/prss.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides for Quantum Pseudorandom Scramblers, opens in a new tab"><svg class="resource-icon" aria-hidden="true"><use href="#icon-slides" /></svg>Slides</a>
                             </div>
                         </div>
                         <p class="publication-authors">
@@ -177,8 +207,8 @@
                                         Functions</a>
                             </h3>
                             <div class="publication-title-actions">
-                                <a class="publication-resource" href="https://arxiv.org/abs/2504.10904" target="_blank" rel="noopener noreferrer" aria-label="arXiv abstract for A Pseudorandom Generator for Functions of Low-Degree Polynomial Threshold Functions, opens in a new tab">arXiv</a>
-                                <a class="publication-resource" href="static/prg.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides for A Pseudorandom Generator for Functions of Low-Degree Polynomial Threshold Functions, opens in a new tab">Slides</a>
+                                <a class="publication-resource" href="https://arxiv.org/abs/2504.10904" target="_blank" rel="noopener noreferrer" aria-label="arXiv abstract for A Pseudorandom Generator for Functions of Low-Degree Polynomial Threshold Functions, opens in a new tab"><svg class="resource-icon" aria-hidden="true"><use href="#icon-arxiv" /></svg>arXiv</a>
+                                <a class="publication-resource" href="static/prg.pdf" target="_blank" rel="noopener noreferrer" aria-label="Slides for A Pseudorandom Generator for Functions of Low-Degree Polynomial Threshold Functions, opens in a new tab"><svg class="resource-icon" aria-hidden="true"><use href="#icon-slides" /></svg>Slides</a>
                             </div>
                         </div>
                         <p class="publication-authors">
@@ -243,7 +273,7 @@
 
             <footer class="site-footer">
                 <span>© 2026 Mingnan Zhao</span>
-                <span>Updated Aug 2026</span>
+                <span>Updated Sep 2026</span>
             </footer>
         </main>
     </body>

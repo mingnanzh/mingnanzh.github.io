@@ -298,6 +298,12 @@ a:focus-visible {
     margin-top: 0.15rem;
 }
 
+.arxiv-category {
+    font-family: Courier, "Courier New", monospace;
+    position: relative;
+    top: -0.1em;
+}
+
 .publication-authors strong {
     color: var(--text);
     font-weight: 600;
